@@ -1,41 +1,201 @@
-# 🏆 HackVerse - Team Repository
+🏆 HackVerse 2026 – Official Submission
 
-Welcome to your official team repository! This is your workspace for the duration of the hackathon. Please read the rules and evaluation guidelines carefully before you begin coding.
+<div align="center">
+🥷 Team Bit-Ninjas
+Med-Bot Mini 2.0
+AI-Powered Multi-Disease Screening Robot
+</div>
 
-## Hackathon Rules & Evaluation Process
+## 📌 Overview
 
-To ensure fairness and track your progress, this hackathon features a strict two-phase evaluation process. **You must push your code to this repository to be evaluated.** Code residing only on your local machines will not be graded.
+Med-Bot Mini 2.0 is an AI-driven, portable healthcare screening robot designed to enable early risk detection in underserved and resource-limited environments.
 
-### Evaluation 1: The Midpoint Check
-* **Deadline:** 12:15 PM
-* **Requirement:** You must have your initial project structure and foundational code pushed to the `main` branch. 
-* **Purpose:** This check ensures your team is on track, actively collaborating, and has a viable concept in motion. Mentors/Judges will review your commit history and current progress.
+Access to preventive healthcare remains a major challenge in rural and semi-urban regions. Most individuals seek medical assistance only after symptoms become severe, resulting in delayed diagnosis and increased treatment costs.
 
-### Evaluation 2: The Final Submission
-* **Deadline:** 5:00 PM
-* **Requirement:** Your completed project must be fully pushed to the `main` branch. 
-* **Purpose:** This is the final version of your project that will be judged for the hackathon prizes.
+Med-Bot Mini 2.0 addresses this gap by integrating:
 
-### STRICT CODE FREEZE POLICY
-**No modifications will be accepted after the Development Time ends at 5:00 PM.** Exactly at the deadline, all team repositories will be **Archived** and converted to **Read-Only**. 
-* Any unpushed local commits will be lost and cannot be submitted.
-* Late submissions, pull requests, or requests to add "just one last fix" will not be accepted under any circumstances.
-* **Tip:** Push your code frequently! Do not wait until the last 5 minutes to push your entire project.
+Biomedical sensor monitoring
 
----
+Computer vision-based health analysis
 
-## Project Details (Team to fill this out)
+Speech and neurological screening
 
-*Please overwrite the information below with your actual project details before the final evaluation.*
+AI-powered multimodal risk scoring
 
-### Team Name: 
-[Enter your team name]
+The system performs real-time preliminary health screening using Vision + Vitals + Voice AI Fusion, providing an intelligent risk classification (Low / Moderate / High).
 
-### Project Name:
-[Enter your project name]
+## 🎯 Problem Statement
 
-### Project Description:
-[Write a brief 1-2 paragraph description of what your project does, the problem it solves, and the technologies used.]
+Preventive health screening is often expensive and inaccessible.
 
-### Setup & Installation Instructions:
-[Provide clear, step-by-step instructions on how the judges can run your project locally. Include any commands needed to install dependencies and start the application.]
+Wearable devices monitor only limited parameters.
+
+Hospitals are overcrowded for minor conditions.
+
+There is no affordable multi-parameter AI screening platform in a portable robotic form.
+
+## 💡 Proposed Solution
+
+Med-Bot Mini 2.0 combines:
+
+Vital sign monitoring
+
+Computer vision health analysis
+
+Speech-based neurological screening
+
+Machine learning risk assessment
+
+into a single, intelligent robotic healthcare assistant.
+
+Heavy AI computation runs on a connected laptop server, while the Raspberry Pi-based robot acts as an intelligent data acquisition and interaction interface.
+
+## ⚙️ Core Features
+
+# 🫀 Vital Monitoring
+
+Heart Rate Monitoring (MAX30102)
+
+SpO₂ Detection
+
+Non-Contact Temperature (MLX90614)
+
+Skin Hydration Estimation
+
+# 🧠 Neurological Screening (FAST Protocol)
+
+Face symmetry detection
+
+Arm drift detection
+
+Speech clarity analysis
+
+# 😮‍💨 Respiratory Monitoring
+
+Breathing rate detection (camera + audio)
+
+Oxygen level fusion risk scoring
+
+# 🦴 Musculoskeletal Analysis
+
+Posture detection
+
+Exercise form correction
+
+Joint imbalance detection
+
+# 😌 Mental Health Monitoring
+
+Emotion detection
+
+Stress & fatigue analysis (NeuroBand AI)
+
+# 💊 Medicine Identification
+
+OCR-based medicine recognition
+
+Side-effect warning system
+
+# 🧪 Technical Architecture
+
+Hardware Stack
+
+Raspberry Pi Zero 2 W
+
+MAX30102 (Heart Rate & SpO₂ Sensor)
+
+MLX90614 (Infrared Temperature Sensor)
+
+Skin Moisture Sensor
+
+Raspberry Pi Camera Module
+
+Microphone & Speaker
+
+OLED Display
+
+Servo Motors
+
+Software Stack
+
+Python
+
+OpenCV
+
+MediaPipe
+
+Scikit-learn / XGBoost
+
+LLM-based symptom reasoning
+
+SQLite Database
+
+Socket Communication (WiFi-based Pi ↔ Laptop Server)
+
+# 🔄 System Workflow
+
+User initiates screening via voice command.
+
+Robot collects biomedical sensor data.
+
+Camera captures facial and posture data.
+
+Data is transmitted to the AI server.
+
+AI modules analyze multimodal inputs.
+
+Risk scoring engine fuses outputs.
+
+Robot announces and displays results.
+
+# 📊 Innovation Highlights
+
+Multimodal AI Fusion (Vision + Vitals + Voice)
+
+Early stroke screening using FAST protocol
+
+Preventive healthcare orientation
+
+Modular and scalable architecture
+
+Operates without requiring a smartphone application
+
+# 🛠 Setup & Installation Guide
+
+1. Clone Repository
+```bash
+git clone https://github.com/your-team/medbot-mini.git
+cd medbot-mini
+```
+2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+For Raspberry Pi:
+```bash
+sudo apt update
+sudo apt install python3-opencv
+```
+3. Start AI Server (Laptop)
+```bash
+python server.py
+```
+4. Start Robot Client (Raspberry Pi)
+```bash
+python client.py
+```
+⚠️ Disclaimer
+
+Med-Bot Mini 2.0 is a preliminary health screening system and is not intended to replace professional medical diagnosis. It provides early risk indications for awareness and preventive action only.
+
+# 🚀 Future Scope
+
+Edge AI optimization (fully running on Raspberry Pi)
+
+Cloud-based health data storage
+
+Remote doctor consultation integration
+
+Addition of blood pressure monitoring module
+
+IoT-enabled health monitoring network
